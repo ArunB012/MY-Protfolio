@@ -1,0 +1,94 @@
+$primecolor: #ff3c00;
+$secondarycolor:#564847;
+$headcolorblk: #272533;
+$headlogcolor:#812b36;
+$paracolorblk: #888496;
+$colorwhit:#fff;
+$boxshadocol:#ebe9f7;
+$graycolor:#f8fafd;
+$colred: red;
+$fooret: #343534;
+
+.button{
+    background: $primecolor;
+    padding: 18px;
+    color: $headcolorblk;
+    border-radius: 8px;
+    width: 180px;
+    border: 0px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+    &:hover{
+      color: $colorwhit;
+    }
+    &:hover:before{
+      // top: 0px;
+      // left: 0px;
+     transform: scale(1, 1);
+    }
+  }
+.button::before{
+    position: absolute;
+    content: '';
+    background-color:$headlogcolor;
+    top: 0px;
+    left: 0px;
+    //left: -160px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    //transition: all 0.2s;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  .cv-qa{
+    padding: 30px 0px;
+    .cv-aq_details{
+        .cv-commom-skill{
+            text-align: center;
+            padding-bottom: 40px;
+            .cv-trapezoid{
+                width:400px;
+                @media(min-width:320px) and (max-width:480px){
+                width: 100%;
+                h2{
+                    left: 32px;
+                }
+                }
+            }
+        }
+        .cv-qa-img_right{
+            width: 550px;
+            @media(min-width:320px) and (max-width:480px){
+            width: 100%;
+            }
+            img{
+                border-radius: 10px;
+            }
+        }
+        .cv-qa_dt-left{
+            padding: 0px 0px 20px 0px;
+            h4{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            ul{
+                li{
+                    margin-top: 20px;
+                    h6{
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: $primecolor;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+  }
