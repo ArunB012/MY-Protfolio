@@ -132,6 +132,7 @@ h2, h3, h4, h5{
      .cv-logo{
         background: none;
         border: 0px;
+        margin-top: 10px;
         .navbar-header{
             a{
                 color: $primecolor;
@@ -318,6 +319,11 @@ h2, h3, h4, h5{
         color: $primecolor;
         font-size: 60px;
     }
+    @media(min-width:320px) and (max-width:480px){
+        .cv-none{
+            display: none;
+        }
+    }
 }
 .cv-bg_skill{
     text-align: center;
@@ -405,11 +411,44 @@ h2, h3, h4, h5{
             // }
         }
     }
+    .cv-footer_middle{
+        padding: 20px 0px;
+        border-top: 1px solid $paracolorblk;
+        ul{
+            font-size: 22px;
+            font-weight: bold;
+            color: $colorwhit;
+            text-align: left;
+            @media(min-width:320px) and (max-width:480px){
+                margin: 0px;
+                padding: 15px;
+            }
+            li{
+                margin-top: 12px;
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+        .cv-float{
+            float: right;
+            @media(min-width:320px) and (max-width:480px){
+                float: none;
+            }
+        }
+    }
     .cv-footer_down{
         border-top: 1px solid $paracolorblk;
         ul{
             li{
                 font-size: 18px;
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .cv-gif-image{
+                width: 85px;
+                img{
+                    border-radius: 5px;
+                }
             }
         }
     }

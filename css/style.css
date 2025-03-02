@@ -107,6 +107,7 @@ h2, h3, h4, h5 {
 .cv-carousel .cv-logo {
   background: none;
   border: 0px;
+  margin-top: 10px;
 }
 .cv-carousel .cv-logo .navbar-header a {
   color: #ff3c00;
@@ -282,6 +283,11 @@ h2, h3, h4, h5 {
   color: #ff3c00;
   font-size: 60px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .cv-carousel .cv-none {
+    display: none;
+  }
+}
 
 .cv-bg_skill {
   text-align: center;
@@ -357,9 +363,46 @@ h2, h3, h4, h5 {
   background: #ff3c00;
   color: #fff;
 }
+.cv-footer_main .cv-footer_middle {
+  padding: 20px 0px;
+  border-top: 1px solid #888496;
+}
+.cv-footer_main .cv-footer_middle ul {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .cv-footer_main .cv-footer_middle ul {
+    margin: 0px;
+    padding: 15px;
+  }
+}
+.cv-footer_main .cv-footer_middle ul li {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.cv-footer_main .cv-footer_middle .cv-float {
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .cv-footer_main .cv-footer_middle .cv-float {
+    float: none;
+  }
+}
 .cv-footer_main .cv-footer_down {
   border-top: 1px solid #888496;
 }
 .cv-footer_main .cv-footer_down ul li {
   font-size: 18px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.cv-footer_main .cv-footer_down ul .cv-gif-image {
+  width: 85px;
+}
+.cv-footer_main .cv-footer_down ul .cv-gif-image img {
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
