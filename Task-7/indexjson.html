@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flightworld</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-login.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon(2).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body style="background-color: gray;">
+    <div class="container">
+        <div class="row">
+            <ul class="Flight-Filter1">
+                <li>Berlin (BER) -> London (LHR) <span>Sun,Mar 30</span></li>
+                <li class="flight-World">Showing 118 of 118 flights</li>
+            </ul>
+            <ul class="Flight-Filter">
+                <li>Airlines</li>
+                <li class="time-flight">Depart</li>
+                <li class="price-flight">Duration</li>
+                <li class="time-flight">Arrive</li>
+                <li class="price-flight">Price</li>
+            </ul>
+            <div class="flight-listu">
+                <div>
+                </div>
+
+            </div>
+            <div>
+                <ul class="Add-City" style="list-style-type: none; margin: 50px;">
+                    <li style="display: inline-block; width: 200px;">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <label for="Depart Date" class="sr-only">Depart Date</label>
+                        <input type="text" class="form-control none"  name="Enter Your Name" placeholder="Depart Date ">
+                      </div>
+                    </li>
+                    <li style="display: inline-block; width: 200px;">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <label for="Depart Date" class="sr-only">Depart Date</label>
+                        <input type="text" class="form-control none"  name="Enter Your Name" placeholder="Depart Date ">
+                      </div>
+                    </li>
+                    <li style="display: inline-block; width: 200px;">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        <label for="Depart Date" class="sr-only">Depart Date</label>
+                        <input type="text" class="form-control none" name="Enter Your Name" placeholder="Depart Date ">
+                      </div>
+                    </li>
+                    <li class="flighyt-add-city">
+                      <div class="input-group ">
+                        <a href="javascript:;">+ Add City</a>
+                      </div>
+                </ul>
+                <button type="button" class="btn">click</button>
+            </div>
+                <div class="Add-more-city">
+                    
+                </div>
+        </div>
+        <div class="flight-book">
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Book now</a>
+        </div>
+        <div class="flight-carousel-bottom">
+          <div class="flight-common-heading">
+            <h2>Flight World Specials Deals</h2>
+            <p>Get the best deals on selected flight</p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="flight-offer-part">
+                  
+              </div>
+            </div>
+            <div>
+              <div class="owl-carousel owl-theme">
+                <div class="flight-sale item">
+                  <img src="images/${item.Image1}" width="100%">
+                  <span><img src="images/${item.Image2}" alt="" width="100%"></span>
+                  <div class="overlay">
+                     <div class="text">${item.Offer}</div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+    </div>
+  <script src="js/javascript.js"></script>  
+</body>
+</html>

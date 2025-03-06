@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "image" : "articles08.png",
+        "Name1" :"New York",
+        "Name2" :"United States",
+        "Price"  : "Get Price"  
+    },
+    {
+        "id" : 2,
+        "image" : "articles11.png",
+        "Name1" :"Paris",
+        "Name2" :"France",
+        "Price"  : "Get Price"  
+    },
+    {
+        "id" : 3,
+        "image" : "articles09.png",
+        "Name1" :"Hamburg Speicherstadt",
+        "Name2" :"Germany",
+        "Price"  : "Get Price"  
+    },
+    {
+        "id" : 4,
+        "image" : "articles04.png",
+        "Name1" :"London",
+        "Name2" :"England",
+        "Price"  : "Get Price"  
+    },
+    {
+        "id" : 5,
+        "image" : "articles12.png",
+        "Name1" :"Budapest",
+        "Name2" :"Hungary",
+        "Price"  : "Get Price"  
+    },
+    {
+        "id" : 6,
+        "image" : "articles06.png",
+        "Name1" :"Bankok",
+        "Name2" :"Thailand",
+        "Price"  : "Get Price"  
+    }
+]

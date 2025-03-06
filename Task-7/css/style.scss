@@ -1,0 +1,1553 @@
+$primecolor:#002d5b;
+$spanfontcol:#fabd06;
+$colorwhit:#ffffff;
+$lightwhite:#97a7b166;
+$blackcolor:#122738;
+$bgcolorlight:#ada6a2d9;
+$bgcolordest:#f5faff;
+$fonticoncolor:#9f9f9f;
+$footercolorbg:#343534;
+$overlaycolor:#002d5bd6;
+$Dollorcolor:#4a93df;
+//353434a6
+
+
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Bold.eot');
+  src: url('../font/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Poppins-Bold.woff2') format('woff2'),
+      url('../font/Poppins-Bold.woff') format('woff'),
+      url('../font/Poppins-Bold.ttf') format('truetype'),
+      url('../font/Poppins-Bold.svg#Poppins-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-BoldItalic.eot');
+  src: url('../font/Poppins-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Poppins-BoldItalic.woff2') format('woff2'),
+      url('../font/Poppins-BoldItalic.woff') format('woff'),
+      url('../font/Poppins-BoldItalic.ttf') format('truetype'),
+      url('../font/Poppins-BoldItalic.svg#Poppins-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Regular.eot');
+  src: url('../font/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Poppins-Regular.woff2') format('woff2'),
+      url('../font/Poppins-Regular.woff') format('woff'),
+      url('../font/Poppins-Regular.ttf') format('truetype'),
+      url('../font/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*, html
+{
+	scrollbar-color:$spanfontcol $colorwhit !important;
+	scrollbar-width: thin !important;  
+	outline: unset;
+}
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background:$colorwhit;
+}
+
+::-webkit-scrollbar-thumb {
+    background:$spanfontcol;  
+}
+
+::-webkit-scrollbar-corner {
+    background: $blackcolor;
+}
+//common class
+body{
+  font-family: 'poppins';
+}
+span{
+  display: inline-block;
+}
+p{
+  font-size: 16px;
+  color: $colorwhit;
+  line-height: 25px;
+}
+.button{
+  background: $primecolor;
+  padding: 18px;
+  color: $colorwhit;
+  border-radius: 8px;
+  width: 180px;
+  border: 0px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s;
+  overflow: hidden;
+  &:hover{
+    color: $blackcolor;
+  }
+  &:hover:before{
+    // top: 0px;
+    // left: 0px;
+   transform: scale(1, 1);
+  }
+}
+.button::before{
+  position: absolute;
+  content: '';
+  background-color:$spanfontcol;
+  top: 0px;
+  left: 0px;
+  //left: -160px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  //transition: all 0.2s;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+.flight-common-heading{
+  text-align: center;
+  margin-bottom: 45px;
+  h2{
+    color: $primecolor;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    color: $bgcolorlight;
+  }
+}
+//Template code
+.flight-headbg{
+  border-radius: 0px;
+  background: none;
+  border: 0px;
+  padding-top: 10px;
+  .navbar-collapse{
+    .navbar-right{
+      .dropdown{
+        a{
+          color: $colorwhit;
+          font-size: 15px;
+          font-weight: bold;
+          background: none;
+          @media(min-width:320px) and (max-width:480px){
+            padding: 6px;
+          }
+          span{
+            margin-right: 5px;
+          }
+        }
+        .dropdown-menu{
+          background: none;
+          padding: 0px;
+          border-radius: 8px;
+          overflow: hidden;
+          a{
+            background-color: $colorwhit;
+            color: $spanfontcol;
+            &:hover{
+              background-color: $spanfontcol;
+              color: $primecolor;
+            }
+          }
+          @media(min-width:320px) and (max-width:480px){
+            width: 40%;
+            margin: 0px 10px 0px 0px ;
+            float: right;
+          }
+        }
+      }
+      //login html-css
+      .flight-login{
+        a{
+          color: $primecolor;
+        }
+      }
+    }
+  }
+  .navbar-header{
+    .list-inline{
+      li{
+        a{
+          color: $primecolor;
+          font-weight: bold;
+          font-size: 20px;
+          position: relative;
+          .flight-img{
+            width: 25px;
+            display: inline-block;
+            position: absolute;
+            top: -1px;
+            left: 52px;
+          }
+          span{
+            color: $spanfontcol;
+          }
+          &:hover{
+            color: $spanfontcol;
+            span{
+              color: $primecolor;
+              img{
+                filter: drop-shadow(0px 0px 3px $spanfontcol);
+              }
+            }
+          }
+        }
+      }
+      .flight-left-slide{
+        margin-right: 5px;
+        a{
+          span{
+            padding: 19px 16px;
+            background-color: $primecolor;
+            top: -9px;
+            left: 0px;
+            width: auto;
+            i{
+              color: $colorwhit;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .navbar-toggle{
+      @media(min-width:320px) and (max-width:768px)
+        {
+        background-color: $primecolor;
+         border: 0px;
+        span{
+          background-color: $spanfontcol;
+        }
+        &:hover{
+          background-color: $spanfontcol;
+          span{
+            background-color: $primecolor;
+          }
+        }
+      }
+    }
+  }
+  .navbar-collapse{
+    @media(min-width:320px) and (max-width:768px)
+      {
+      border-top: 1px solid $primecolor;
+      margin-top: -17px;
+    }
+  }
+}
+.flight-carousel{
+  margin: 0px -15px;
+  background: url(../images/banner-bg.jpg) no-repeat -470px 0px/ 160%;
+  @media(min-width:320px) and (max-width:480px){
+    background: url(../images/banner-bg.jpg) no-repeat 0px 0px/ 100%;
+  }
+}
+.flight-carousel::before{
+  position: absolute;
+  content: '';
+  background-color:#12273857;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel-inner{
+  .item{
+    .flight-heading{
+      margin-top: 75px;
+      text-align: center;
+      @media(min-width:320px) and (max-width:480px){
+        margin-top: 40px;
+      }
+      h1{
+        color: $colorwhit;
+        font-weight: bold;
+        font-size: 38px;
+        span{
+          display: block;
+          font-weight: normal;
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+        .flight-h1span,.flight-h2span{
+          display: inline-block;
+          font-weight: bold;
+          font-size: 38px;
+          color: $spanfontcol;
+        }
+        .flight-h1span{
+          background-color: $lightwhite;
+          color: $blackcolor;
+          padding: 10px 2px;
+          margin: 0px 10px;
+        }
+      }
+      p{
+        padding: 10px 280px;
+        @media(min-width:320px) and (max-width:480px){
+          padding: 0px 15px;
+        }
+      }
+    }
+  }
+}
+.flight-carousel-middle{
+  background-color: $bgcolorlight;
+  padding: 25px 0px 15px 0px;
+  .nav-pills{
+    background: none;
+    li{
+      margin-right: 10px;
+      a{
+        span{
+          background-color: $bgcolordest;
+          border-radius: 50px;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          margin-right: 8px;
+        }
+      }
+    }
+    li{
+      a{
+        background: none;
+        color: $primecolor;
+        font-weight: bold;
+        font-size: 16px;
+        span{
+          border: 1px solid $spanfontcol;
+          i{
+            color: $colorwhit;
+          }
+        }
+        &:hover, &:focus{
+          background: none;
+          color: $spanfontcol;
+          span{
+            i{
+              color: $spanfontcol;
+            }
+          }
+        }
+      }
+    }
+    .active{
+      a{
+        color: $spanfontcol;
+        span{
+          border: 1px solid $spanfontcol;
+        }
+      }
+      a{
+        i{
+          color: $spanfontcol;
+        }
+      }
+    }
+  }
+  .flight-destinstion{
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    .flight-orgin-bgcolour{
+      background-color: $colorwhit;
+      border-radius: 8px;
+      .list-inline{
+        padding: 15px;
+        margin: 0px;
+        position: relative;
+        @media(min-width:320px) and (max-width:480px)
+        {
+          padding: 25px 15px;
+        }
+        li{
+         background-color: $bgcolordest;
+          width: 225px;
+          margin: 0px 8px -20px 0px;
+          border-radius: 8px;
+          @media(min-width:320px) and (max-width:480px){
+            margin-top: 25px;
+            width: 100%;
+          }
+          .input-group{
+            padding: 10px 3px;
+            span{
+              background-color: $bgcolordest;
+              border: 0px;
+              i{
+                font-size: 20px;
+                color: $fonticoncolor;
+              }
+            }
+          }
+          input{
+            background: none;
+            border: 0px;
+            box-shadow: none;
+            text-transform: capitalize;
+          }
+        }
+        .flight-exchangesymb{
+          border-radius: 50px;
+          padding: 5px 8px;
+          background-color: $primecolor;
+          position: absolute;
+          top: 26px;
+          left: 230px;
+          width: 30px;
+          z-index: 1;
+          margin: 0px;
+          @media(min-width:320px) and (max-width:480px)
+          {
+            top: 90px;
+            left: 270px;
+          }
+          i{
+            color: $colorwhit;
+            font-size: 15px;
+          }
+          &:hover{
+            background-color: $spanfontcol;
+            i{
+              color: $primecolor;
+            }
+          }
+        }
+        .flight-searchbt{
+          width: 170px;
+          margin-right: 0px;
+          text-align: right;
+          a{
+            button{
+              width: 100%;
+              padding: 15px;
+            }
+          }
+        }
+        .flight-per{
+          .input-group{
+            input{
+              margin-top: 5px;
+              background-color: $colorwhit;
+              width: 110px;
+              border-radius: 10px;
+              padding: 3px 1px;
+              margin-right: 13px;
+            }
+          }
+        }
+        .date-set{
+          .input-group{
+            :nth-child(3){
+              margin-right: 13px;
+            }
+            input{
+              width: 75px;
+              margin-right: 0px;
+              font-size: 12px;
+            }
+          }
+        }
+        .dropdown{
+          button{
+            width: 100%;
+            background-color: $bgcolordest;
+            padding: 10px 5px;
+            border: 0px;
+            color: $blackcolor;
+            i{
+              margin: 0px 1px 0px -8px;
+              font-size: 20px;
+              color: $fonticoncolor;
+            }
+          }
+          span{
+            float: right;
+            margin-top: 8px;
+            border-top: 8px dashed;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            color: $fonticoncolor;
+          }
+          .dropdown-menu{
+            li{
+              margin: 0px 10px 5px 10px;
+              background: none;
+            }
+            .flight-done{
+              width: 65px;
+              button{
+                background-color: $primecolor;
+                color: $colorwhit;
+                &:hover{
+                  color: $blackcolor;
+                  background-color: $spanfontcol;
+                }
+              }
+            }
+          }
+        }
+        .flight-person{
+          margin: 0px 0px 0px 0px;
+          padding: 5px 3px;
+          @media(min-width:320px) and (max-width:480px){
+            margin-top: 25px;
+          }
+          .dropdown{
+            .flight-person-noms{
+              margin-top: 10px;
+              button{
+                background-color: $primecolor;
+                display: inline-block;
+                width: 28px;
+                padding: 1px 2px;
+                color: $colorwhit;
+                font-weight: bold;
+                &:hover{
+                  background-color: $spanfontcol;
+                  color: $blackcolor;
+                }
+              }
+              span{
+                width: 108px;
+                float: none;
+                margin: 0px 0px 0px 0px;
+                border: 0px;
+                color: $blackcolor;
+                font-size: 15px;
+              }
+              input{
+                width: 45px;
+                text-align: center;
+                font-weight: bold;
+                background-color: $bgcolordest;
+              }
+            }
+            .reds{
+              display: block;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      .flight-multiway{
+        li{
+          margin-top: 5px;
+        }
+      }
+      .flight-date{
+        .input-group{
+          input{
+            width: 50%;
+            background-color: $colorwhit;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .flight-checkbox-oneway{
+      margin-top: 30px;
+      margin-bottom: 0px;
+      li{
+        .flight-check-box{
+          display: inline-block;
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 12px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: none;
+            border-radius: 5px;
+            border: 1px solid $blackcolor;
+          }
+          /* On mouse-over, add a grey background color */
+          :hover input ~ .checkmark {
+            background-color: $colorwhit;
+          }
+          
+          /* When the checkbox is checked, add a blue background */
+          input:checked ~ .checkmark {
+            background-color: $Dollorcolor;
+          }
+          
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          
+          /* Show the checkmark when checked */
+          input:checked ~ .checkmark:after {
+            display: block;
+          }
+          
+          /* Style the checkmark/indicator */
+          .checkmark:after {
+            left: 4px;
+            top: 1px;
+            width: 5px;
+            height: 9px;
+            border: solid $colorwhit;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .flight-multiway-choose{
+      .flight-orgin-bgcolour{
+        ul{
+          li{
+            margin: 3px 5px 0px 0px;
+            width: 253px;
+            @media(min-width:320px) and (max-width:480px){
+              width: 100%;
+            }
+          }
+          .flight-person{
+            float: right;
+            width: 400px;
+            margin-top: 5px;
+            @media(min-width:320px) and (max-width:480px){
+              float: none;
+              width: 100%;
+              margin-bottom: 8px;
+            }
+            button{
+              text-align: left;
+              padding: 10px 15px;
+            }
+            .trav{
+              .max, .min{
+                text-align: center;
+              }
+            }
+          }
+          .flight-mul-Add-remove{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            li{
+              display: inline-block;
+            }
+            .flight-remove{
+              float: right;
+              width: 290px;
+              background-color: $colorwhit;
+              margin-top: 15px;
+              @media(min-width:320px) and (max-width:480px){
+              float: none;
+              margin-bottom: 5px;
+              }
+              a{
+                color: $blackcolor;
+                font-weight: bold;
+                text-transform: capitalize;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid $colorwhit;
+                &:hover{
+                  border: 1px solid $blackcolor;
+                }
+              }
+            }
+          }
+          .flight-multi-cal{
+            width: 170px;
+            .input-group{
+              input{
+                width: 85%;
+              }
+            }
+            @media(min-width:320px) and (max-width:480px){
+              width: 100%;
+            }
+          }
+          .flight-searchbt{
+            float: right;
+            width: auto;
+            a{
+              button{
+                width: 195px;
+              }
+            }
+          }
+          .flighyt-add-city{
+            width: 110px;
+            background-color: $colorwhit;
+            .input-group{
+              padding: 16px 3px;
+              a{
+                text-decoration: none;
+                color: $blackcolor;
+                font-weight: bold;
+                background-color: $lightwhite;
+                border-radius: 5px;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.flight-carousel-bottom{
+  position: relative;
+  margin-top: 50px;
+  .flight-common-heading{
+    margin-bottom: 50px;
+    h2{
+      color: $colorwhit;
+    }
+    p{
+      @media(min-width:320px) and (max-width:480px){
+        color: $blackcolor;
+      }
+    }
+  }
+  //json offer
+  .flight-sale{
+    background-color: $spanfontcol;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: -15px;
+    @media(min-width:320px) and (max-width:480px){
+      margin-right: 0px;
+      margin-top: 25px;
+    }
+    span{
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $overlaycolor;
+      overflow: hidden;
+      width: 100%;
+      height: 45px;
+      transition: .5s ease;
+      .text {
+        color:$colorwhit;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+      }
+    }
+    &:hover{
+      .overlay{
+        height: 100%;
+        .text{
+          color: $spanfontcol;
+        }
+      }
+    }
+  }
+}
+.flight-whitebgcolor{
+  background-color: $colorwhit;
+  padding: 50px 0px;
+  margin: 0px -15px;
+  .flight-time{
+    //json code
+    .flight-deals{
+      padding: 10px;
+      margin-bottom: 30px;
+      box-shadow: 2px 2px 15px $lightwhite;
+      border-radius: 8px;
+      border: 1px solid $lightwhite;
+      transition: all 500ms ease-in-out;
+      &:hover{
+        //box-shadow: 2px 2px 15px $fonticoncolor;
+        border: 1px solid $spanfontcol;
+        transform: translateX(-10px);
+        cursor: pointer;
+        box-shadow: 12px 0px 25px 0px $fonticoncolor;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        @media(min-width:320px) and (max-width:480px){
+          //background: url(../images/banner-bg.jpg) no-repeat 0px 0px/ 100%;
+          transform: translateY(-10px);
+          box-shadow: 0px 9px 10px 0px $fonticoncolor;
+        }
+      }
+       h4{
+        color: $blackcolor;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 10px 0px;
+        text-transform: capitalize;
+      }
+      p{
+        color: $blackcolor;
+        font-size: 16px;
+      }
+      .price-ticket{
+        margin-top: 15px;
+        span{
+          font-size: 11px;
+          font-weight: bold;
+          margin-bottom: -3px;
+          img{
+            border-radius: 8px;
+            overflow: hidden;
+          }
+        }
+        :last-child{
+          float: right;
+          color: $primecolor;
+          font-size: 20px;
+          font-weight: bold;
+          span{
+            float: none;
+            font-size: 20px;
+            color: $Dollorcolor;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+.flight-whitebgcolor1{
+  background-color: $colorwhit;
+  padding: 50px 0px;
+  margin: 0px -15px;
+  border-top: 1px solid $lightwhite;
+  border-bottom: 1px solid $lightwhite;
+  .flight-offer-part1{
+    //json offer
+    .flight-Airline{
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 15px $lightwhite;
+      @media(min-width:320px) and (max-width:480px){
+        margin-top: 25px;
+      }
+      .flight-hover-effect{
+        position: relative;
+        overflow: hidden;
+        img{
+          transition: all 0.4s ease-in-out;
+         // max-width: 100%;
+          //height: auto;
+          &:hover{
+            transform: scale(1.5);
+          }
+        }
+      }
+      .flight-hover-effect::before {
+        position: absolute;
+        top: 0;
+        left: -90%;
+        z-index: 2;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        transform: skewX(-25deg);
+      }  
+      .flight-hover-effect:hover:before {
+        animation: shine 0.75s;
+      }
+      .flight-logo-img {
+        background: $colorwhit;
+        position: absolute;
+        top:20px;
+        left: 25px;
+        border-radius: 20px;
+        img{
+          border-radius: 50%;
+          overflow: hidden;
+          width: 23%;
+        }
+        span{
+          font-size: 12px;
+          color:$Dollorcolor;
+          margin-right: 5px;
+        }
+        &:hover{
+          background-color: $spanfontcol;
+        }
+      }
+      .Flight-Usd{
+        padding: 18px 15px 15px 15px;
+        h5{
+          font-size: 17px;
+          margin: 0px;
+        }
+        p{
+          color: $fonticoncolor;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        .flight-price{
+          color: $blackcolor;
+          font-size: 17px;
+          :first-child{
+            color: $Dollorcolor;
+            &:hover{
+              text-shadow: 0px 0px 3px $colorwhit;
+            }
+          }
+          :last-child{
+            color: $primecolor;
+            font-weight: bold;
+          }
+        }
+      }
+      .button{
+        width: 100%;
+        border-radius: 0px;
+        background-color: $colorwhit;
+        h5{
+          color: $blackcolor;
+        }
+        &:hover{
+          :first-child{
+            text-shadow: 2px 0px 1px $colorwhit;
+          }
+        }
+      }
+    }
+  }
+}
+.flight-whitebgcolor2{
+  background-color: $colorwhit;
+  margin: 0px -15px;
+  padding: 40px 0px;
+  //json
+  .flight-top-destinations{
+    .flight-Top-Place{
+      margin-top: 25px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 15px $lightwhite;
+      padding: 25px;
+      span{
+        width: 100%;
+        height: 185px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+         // border-radius: 10px;
+          height: 100%;
+          transition: all 0.4s ease-in-out;
+          &:hover{
+            transform: scale(1.5);
+          }
+        }
+      }
+      span::before {
+        position: absolute;
+        top: 0;
+        left: -90%;
+        z-index: 2;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        transform: skewX(-25deg);
+      } 
+      span:hover:before {
+        animation: shine 0.75s;
+      }
+      .Flight-Book{
+        h5{
+          color: $blackcolor;
+          font-weight: bold;
+          margin: 12px 0px 0px 0px;
+        }
+        p{
+          color: $fonticoncolor;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        a{
+          color: $primecolor;
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          padding: 8px;
+          overflow: hidden;
+          transition: 0.2s;
+          border-radius: 5px;
+          span{
+            position: absolute;
+            display: block;
+          }
+          span:nth-child(1){
+            top: 0px;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,transparent,$spanfontcol);
+          }
+          span:nth-child(3){
+            bottom: 0px;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg,transparent,$spanfontcol);
+          }
+          span:nth-child(2){
+            top: -100px;
+            right: 0%;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,$spanfontcol);
+          }
+          span:nth-child(4){
+            bottom: -100px;
+            left: 0px;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,$spanfontcol);
+          }
+          &:hover{
+            text-decoration: none;
+            color: $blackcolor;
+            background-color: $spanfontcol;
+            box-shadow: 0px 0px 10px $spanfontcol, 0px 0px 10px $spanfontcol, 0px 0px 0px $spanfontcol;
+            transition-delay: 1s;
+            span:nth-child(1){
+              left: 100%;
+              transition: 1s;
+            }
+            span:nth-child(3){
+              right: 100%;
+              transition: 1s;
+              transition-delay: 0.5s;
+            }
+            span:nth-child(2){
+              top: 100%;
+              transition: 1s;
+              transition-delay: 0.25s;
+            }
+            span:nth-child(4){
+              bottom: 100%;
+              transition: 1s;
+              transition-delay: 0.50s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.flight-whitebgcolor3{
+  background-color: $colorwhit;
+  margin: 0px -15px;
+  padding: 40px 0px;
+  border-top: 1px solid $lightwhite;
+  border-bottom: 1px solid $lightwhite;
+  .flight-common-heading{
+    text-align: left;
+    margin-top: 25px;
+    padding-top: 35px;
+    span{
+      color: $fonticoncolor;
+    }
+    p{
+      color: $blackcolor;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .flight-amazing-deals{
+    padding: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 15px $lightwhite;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 25px;
+    //position: relative;
+    // .flight-number-bg{
+    //   background-color: $spanfontcol;
+    //   border-radius: 50px;
+    //   font-size: 16px;
+    //   width: 25px;
+    //   position: absolute;
+    //   top: 0px;
+    //   left: 0px;
+    // }
+    h3{
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+    }
+    p{
+      color: $fonticoncolor;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+    span{
+      width: 80px;
+      position: relative;
+      z-index: 1;
+    }
+    .overlay {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: 0;
+      background-color: $spanfontcol;
+      overflow: hidden;
+      width: 13%;
+      height: 33px;
+      transition: .5s ease;
+      border-radius: 50px;
+      span{
+        position: absolute;
+        top: 11px;
+        left: 6px;
+        color: $blackcolor;
+        width: 25px;
+      }
+      @media(min-width:320px) and (max-width:480px){
+        width: 10%;
+      }
+    }
+    &:hover{
+      .overlay{
+         height: 100%;
+         width: 100%;
+         border-radius: 0;
+         top: 0px;
+         left: 0px;
+      }
+    }
+  }
+}
+.flight-whitebgcolor4{
+  background-color: $colorwhit;
+  margin: 0px -15px;
+  padding: 40px 0px;
+  .flight-common-heading{
+    .flight-trapezoid {
+      border-bottom: 20px solid $primecolor;
+      border-top: 20px solid $primecolor;
+      border-left: 20px solid transparent;
+      height: 0;
+      color: $colorwhit;
+      padding: 0px 8px;
+      width: 200px;
+      position: relative;
+      text-align: left;
+      border-radius: 5px;
+      &:hover{
+        border-bottom: 20px solid $spanfontcol;
+        border-top: 20px solid $spanfontcol;
+        span{
+          color: $primecolor;
+        }
+      }
+      span{
+        position: absolute;
+        top: -11px;
+        font-size: 17px;
+      }
+    }
+  }
+  .flight-only-unique{
+    .flight-unique{
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 25px;
+      box-shadow: 2px 2px 15px $lightwhite;
+      position: relative;
+      color: $colorwhit;
+      height: 250px;
+      .flight-price-line{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        :first-child{
+          border-bottom: 1px solid $colorwhit;
+          font-weight: bold;
+          padding-bottom: 8px;
+          margin-bottom: 10px;
+          font-size: 17px;
+        }
+        :last-child{
+          display: block;
+          font-size: 17px;
+        }
+      }
+      &:hover{
+        box-shadow: 0px 0px 15px $spanfontcol;
+        border: 1px solid $colorwhit;
+        .flight-price-line{
+          :first-child{
+            border-bottom: 1px solid $Dollorcolor;
+          }
+        }
+      }
+    }
+  }
+  .flight-see{
+    text-align: center;
+    margin: 85px 0px;
+    a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover{
+        color: $spanfontcol;
+      }
+    }
+  }
+}
+
+//footer
+.flight-footer{
+  background-color: $footercolorbg;
+  padding: 50px 0px;
+  margin: 0px -15px;
+  .flight-footer-up{
+    .flight-footer-left{
+      margin-top: 25px;
+      a{
+        color: $colorwhit;
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        text-decoration: none;
+        .flight-img{
+          width: 25px;
+          display: inline-block;
+          position: absolute;
+          top: -25px;
+          left: 57px;
+        }
+        span{
+          color: $colorwhit;
+        }
+        &:hover, &:hover span{
+          color: $spanfontcol;
+          .img{
+            filter: drop-shadow(0px 0px 3px $spanfontcol);
+          }
+        }
+      }
+      .flight-footer-mail{
+        margin-top: 55px;
+        p{
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .form-group{
+          position: relative;
+          margin-top: 40px;
+          input{
+            padding: 30px 10px;
+            margin-top: 20px;
+            box-shadow: none;
+            border: 30px;
+            border-radius: 0px;
+            font-size: 16px;
+          }
+          button{
+            position: absolute;
+            right: 1px;
+            top: 46px;
+            width: 125px;
+            padding: 19px;
+            border-radius: 0px;
+            @media(min-width:320px) and (max-width:768px)
+              {
+                top: 71px;
+            }
+          }
+        }
+      }
+      .list-inline{
+        margin-top: 50px;
+        @media(min-width:320px) and (max-width:768px){
+            text-align: center;
+        }
+        li{
+          width: 120px;
+        }
+      } 
+    }
+    .flight-footer-right{
+      @media(min-width:320px) and (max-width:768px){
+        margin-left: 13px;
+      }
+      a{
+        color: $colorwhit;
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+          color: $spanfontcol;
+        }
+        span{
+          display: block;
+          margin-left: -25px;
+          }
+      }
+      p{
+        font-size: 18px;
+        font-weight: bold;
+        margin: -65px 0px 0px 95px;
+      }
+    }
+    .flight-footer-right-us{
+      margin-top: 75px;
+      @media(min-width:320px) and (max-width:768px){
+        margin-top: 30px;
+      }
+      h3{
+        color: $colorwhit;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      ul{
+        padding: 0px;
+        li{
+          list-style-type: none;
+          margin-top: 15px;
+          a{
+            color: $lightwhite;
+            text-decoration: none;
+            font-size: 15px;
+            &:hover{
+              color: $spanfontcol;
+            }
+          }
+        }
+      }
+    }
+  }
+  .flight-footer-bottom{
+    border-top:2px solid $bgcolorlight ;
+    border-bottom:2px solid $bgcolorlight;
+    margin-top: 35px;
+    padding: 5px 0px;
+    .footer-bottom{
+      h4{
+        color: $colorwhit;
+        font-weight: bold;
+      }
+      .nav{
+        a{
+          background: none;
+          color: $colorwhit;
+          font-size: 15px;
+          font-weight: bold;
+          span{
+            i{
+              color: $colorwhit;
+              font-size: 16px;
+            }
+          }
+          &:hover{
+            color: $spanfontcol;
+            span{
+              i{
+                color: $spanfontcol;
+              }
+            }
+          }
+        }
+      }
+      .footer-mail{
+        float: right;
+        @media(min-width:320px) and (max-width:768px){
+          float: none;
+        }
+      }
+    }
+  }
+  .flight-footer-end{
+    margin-top: 45px;
+    @media(min-width:320px) and (max-width:768px){
+      position: relative;
+    }
+    .list-inline{
+      text-align: center;
+      li{
+        a{
+          color: $colorwhit;
+          text-decoration: none;
+          span{
+            background-color: $blackcolor;
+            padding: 7px 13px;
+            border-radius: 50%;
+            @media(min-width:320px) and (max-width:768px){
+              //padding: 8px 16px;
+            }
+            i{
+              color: $fonticoncolor;
+              font-size: 25px;
+            }
+          }
+          &:hover{
+            color: $spanfontcol;
+            span{
+              i{
+                color: $spanfontcol;
+              }
+            }
+          }
+        }
+      }
+      .flight-return-top{
+        position: fixed;
+        top: 645px;
+        right: 65px;
+        @media(min-width:320px) and (max-width:768px){
+          position: absolute;
+          top: 25px;
+          right: 0px;
+        }
+      }
+    }
+  }
+}
+.move{
+    display: none;
+}
+
+
+// .owl-carousel{
+//   .item {
+//       width: 100%;
+//       height: 400px;
+//       position: relative;
+//       border-radius: 12px;
+//       overflow: hidden;
+  
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         position: absolute;
+//         inset: 0;
+//       }
+  
+//       .overlay {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         padding: 28px 25px;
+//         color: #fff;
+//         background: rgb(2, 0, 36);
+//         background: linear-gradient(
+//           0deg,
+//           #020024 0%,
+//           #000032a1 3%,
+//           #17d9ff00 100%
+//         );
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: flex-start;
+  
+//         span {
+//           background: rgba(255, 255, 255, 0.25);
+//           backdrop-filter: blur(4px);
+//           -webkit-backdrop-filter: blur(4px);
+//           border-radius: 60px;
+//           padding: 10px 20px;
+//           display: inline-block;
+//         }
+  
+//         > div {
+//           h2 {
+//             letter-spacing: 0.5px;
+//             margin-bottom: 5px;
+//           }
+//         }
+//       }
+//     }
+// }
+// .owl-nav {
+//   position: absolute;
+//   top: -100px;
+//   right: 0;
+
+//   // @include mQ(600px) {
+//   //   top: -60px !important;
+//   // }
+
+//   button {
+//     background: #fff !important;
+//     width: 45px;
+//     height: 45px;
+//     font-size: 25px !important;
+//     box-shadow: 0px 0px 17px #00000005;
+//     border-radius: 50%;
+
+//     &:nth-of-type(1) {
+//       margin-right: 13px;
+//     }
+//   }
+// }

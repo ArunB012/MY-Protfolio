@@ -1,0 +1,480 @@
+$primecolor:#002d5b;
+$spanfontcol:#fabd06;
+$colorwhit:#ffffff;
+$lightwhite:#97a7b166;
+$blackcolor:#122738;
+$bgcolorlight:#ada6a2d9;
+$bgcolordest:#f5faff;
+$fonticoncolor:#9f9f9f;
+$footercolorbg:#343534;
+$overlaycolor:#002d5bd6;
+$Dollorcolor:#4a93df;
+$listbgcolor:#efeeee;
+$listpricColor:#f5faff;
+
+
+
+//log in css
+.flight-headbg{
+    margin-bottom: -14px;
+}
+.flight-login-bgcolor{
+    background:$lightwhite;
+    margin: 0px -15px;
+    padding: 45px 0px;
+    text-align: center;
+    .flight-sign-in{
+        background-color: $colorwhit;
+        width: 520px;
+        display: inline-block;
+        padding: 30px 15px;
+        border-radius: 8px;
+        text-align: left;
+        @media(min-width:320px) and (max-width:768px){
+            width: 100%;
+        }
+        .flight-login-lock{
+            span{
+                border-radius: 50%;
+                background-color: $spanfontcol;
+                padding: 19px 20px;
+                i{
+                    font-size: 25px;
+                }
+            }
+            h5{
+                font-size: 25px;
+                font-weight: bold;
+                margin: -55px 0px 0px 80px;
+            }
+            p{
+                color: $blackcolor;
+                font-size: 14px;
+                margin: 10px 0px 0px 80px;
+            }
+        }
+        .flight-id{
+            margin-top: 20px;
+            .form-group{
+                input{
+                    padding: 25px 10px;
+                    margin-top: 10px;
+                    box-shadow: none;
+                    font-size: 16px;
+                    &:focus{
+                        border: 1px solid $bgcolorlight;
+                    }
+                }
+            }
+            .checkbox{
+                .lable{
+                    font-size: 12px;
+                    font-weight: bold;
+                    a{
+                        text-decoration: none;
+                        span{
+                            color: $blackcolor;
+                        }
+                    }
+                }
+            }
+            .flight-btn-login{
+                font-weight: bold;
+                button{
+                    width: 140px;
+                    padding: 20px;
+                    margin-right: 10px;
+                    @media(min-width:320px) and (max-width:768px)
+                      {
+                        width: 105px;
+                        padding: 15px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+.flight-carousel-middle{
+    background-color: $primecolor;
+    margin: 0px -15px;
+    padding: 45px 0px;
+    .nav-pills{
+        li{
+            a{
+                color: $colorwhit;
+            }
+        }
+    }
+    .flight-destinstion{
+        .flight-checkbox-oneway{
+            li{
+                .flight-check-box{
+                    color: $colorwhit;
+                    .checkmark{
+                        border: 1px solid $spanfontcol;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.flight-list-bgcolour{
+    background-color: $listbgcolor;
+    margin: 0px -15px;
+    padding: 0px 0px 20px 0px;
+    @media(min-width:320px) and (max-width:768px){
+        padding: 0px 10px 20px 10px;
+    }
+    .Flight-Filter1{
+        ul{
+            padding: 0px;
+            li{
+                @media(min-width:320px) and (max-width:768px){
+                    width: 50%;
+                }
+                i{
+                    font-size: 18px;
+                    margin-right: 8px;
+                }
+                a{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+.Flight-Filter, .Flight-Filter1{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $listpricColor;
+    li{
+        display: inline-block;
+        width: 223px;
+        color: $blackcolor;
+        font-weight: bold;
+        font-size: 13px;
+        @media(min-width:320px) and (max-width:768px){
+            width: 19%;
+        }
+    }
+    .time-flight{
+        padding: 0px 65px;
+        @media(min-width:320px) and (max-width:768px){
+            padding: 0px;
+            text-align: center;
+        }
+    }
+    .price-flight{
+        text-align: center;
+    }
+    .flight-World{
+        float: right;
+        text-align: right;
+        font-weight: normal;
+        font-size: 13px;
+        @media(min-width:320px) and (max-width:768px){
+            font-size: 11px;
+        }
+    }
+}
+.colourbg{
+ background: none;
+ margin-top: 15px;
+ li{
+    font-size: 15px;
+    @media(min-width:320px) and (max-width:768px){
+        width: 50%;
+        font-size: 13px;
+    }
+    span{
+        font-weight: normal;
+    }
+ }
+}
+.flight-list{
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: $colorwhit;
+        margin-top: 25px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid $colorwhit;
+        li{
+            width: 220px;
+            display: inline-block;
+            @media(min-width:320px) and (max-width:768px){
+                width: 19%;
+            }
+            .flight-list-logo{
+                span{
+                    font-size: 11px;
+                    font-weight: bold;
+                    margin: 0px 5px -3px 0px;
+                    @media(min-width:320px) and (max-width:768px){
+                        width: 46%;
+                        font-size: 8px;
+                        margin: 0px 0px -7px 0px;
+                    }
+                    img{ 
+                        border-radius: 8px;
+                        overflow: hidden;
+                    }                
+                }
+                :last-child{
+                    display: block;
+                    color: $Dollorcolor;
+                    margin-top: 5px;
+                    @media(min-width:320px) and (max-width:768px){
+                        width: 100%;
+                    }
+                }
+                :first-child{
+                    margin-top: 0px;
+                }
+            }
+            .time-flight{
+                padding: 0px 65px;
+                @media(min-width:320px) and (max-width:768px){
+                    padding: 0px;
+                    text-align: center;
+                }
+                span{
+                    display: block;
+                    font-weight: bold;
+                    font-size: 16px;
+                    @media(min-width:320px) and (max-width:768px){
+                        font-size: 13px;
+                    }
+                }
+                :last-child{
+                    margin-top: 8px;
+                    font-size: 12px;
+                    @media(min-width:320px) and (max-width:768px){
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .Duration-flight{
+                text-align: center;
+                @media(min-width:320px) and (max-width:768px){
+                    text-align: left;
+                }
+                span{
+                    display: block;
+                    font-size: 13px;
+                    @media(min-width:320px) and (max-width:768px){
+                        font-size: 11px;
+                    }
+                    span{
+                        border-top: 1px solid $blackcolor;
+                        display: inline-block;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .price-flight{
+                text-align: center;
+                span{
+                    display: block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-left: 5px;
+                    @media(min-width:320px) and (max-width:768px){
+                        font-size: 13px;
+                        margin-left: 0px;
+                    }
+                    span{
+                        display: inline-block;
+                        font-weight: normal;
+                        margin-right: 3px;
+                    }
+                }
+                a{
+                    button{
+                        padding: 8px;
+                        background-color: $colorwhit;
+                        border-radius: 5px;
+                        border: 1px solid $primecolor;
+                        color: $Dollorcolor;
+                        @media(min-width:320px) and (max-width:768px){
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 2px 2px 15px $fonticoncolor;
+            border: 1px solid $spanfontcol;
+            .price-flight{
+                a{
+                    button{
+                        background-color: $primecolor;
+                        color: $spanfontcol;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flight-book{
+    a{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #2196f3;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 25px;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 5px;
+      }
+     a:hover{
+        text-decoration: none;
+        color: #255784;
+        background-color: #2196f3;
+        box-shadow: 0px 0px 10px #2196f3, 0px 0px 40px #2196f3, 0px 0px 80px #2196f3;
+        transition-delay: 1s;
+      }
+      a span{
+        position: absolute;
+        display: block;
+      }
+      a span:nth-child(1){
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#2196f3);
+      }
+      a:hover span:nth-child(1){
+        left: 100%;
+        transition: 1s;
+      }
+      a span:nth-child(3){
+        bottom: 0px;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,#2196f3);
+      }
+      a:hover span:nth-child(3){
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+      a span:nth-child(2){
+        top: -100px;
+        right: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#2196f3);
+      }
+      a:hover span:nth-child(2){
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+      }
+      a span:nth-child(4){
+        bottom: -100px;
+        left: 0px;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#2196f3);
+      }
+      a:hover span:nth-child(4){
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+      }
+
+}
+///owl
+.owl-carousel{
+    .item {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+    
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          inset: 0;
+        }
+    
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 28px 25px;
+          color: #fff;
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            0deg,
+            #020024 0%,
+            #000032a1 3%,
+            #17d9ff00 100%
+          );
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+    
+          span {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 60px;
+            padding: 10px 20px;
+            display: inline-block;
+          }
+    
+          > div {
+            h2 {
+              letter-spacing: 0.5px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+}
+.owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
+  
+    // @include mQ(600px) {
+    //   top: -60px !important;
+    // }
+  
+    button {
+      background: #fff !important;
+      width: 45px;
+      height: 45px;
+      font-size: 25px !important;
+      box-shadow: 0px 0px 17px #00000005;
+      border-radius: 50%;
+  
+      &:nth-of-type(1) {
+        margin-right: 13px;
+      }
+    }
+  }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flightworld</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-login.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon(2).ico">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse flight-headbg">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="list-inline">
+            <li class="flight-left-slide">
+              <a class="navbar-brand" href="javascrirt:;"><span class="flight-img"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+            </li>
+            <li>
+              <a class="navbar-brand" href="index.html">flight<span class="flight-img"><img src="images/favicon.png" alt="" width="100%"></span><span>World</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown flight-login">
+              <a class="dropdown-toggle " data-toggle="dropdown" href="#">
+                <span><i class="fa fa-money" aria-hidden="true"></i></span>Currency
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Rupee (₹)</a></li>
+                <li><a href="#">Dollar ($)</a></li>
+                <li><a href="#">Yen (¥)</a></li>
+              </ul>
+            </li>
+            <li class="dropdown flight-login">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span><i class="fa fa-language" aria-hidden="true"></i></span>Language
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Tamil</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
+              </ul>
+            </li>
+            <li class="dropdown flight-login">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>Account
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="flight-carousel-middle">
+      <div class="container"> 
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="pill" href="#home"><span><i class="fa fa-check" aria-hidden="true"></i></span>One-Way</a>
+          </li>
+          <li>
+            <a data-toggle="pill" href="#menu1"><span><i class="fa fa-check" aria-hidden="true"></i></span>Return</a>
+          </li>
+          <li>
+            <a data-toggle="pill" href="#menu2"><span><i class="fa fa-check" aria-hidden="true"></i></span>Multi-city</a>
+          </li>
+        </ul>
+        
+        <div class="tab-content flight-destinstion">
+          <div id="home" class="tab-pane fade in active">
+            <div class="flight-orgin-bgcolour">
+              <ul class="list-inline exchanges">
+                <li class="flight-exchangesymb"><span><i class="fa fa-exchange" aria-hidden="true"></i></span></li>
+                <li class="change">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                    <label for="Origin" class="sr-only">Origin</label>
+                    <input type="text " class="form-control"  name="Enter Your Name" placeholder="Origin ">
+                  </div>
+                </li>
+                <li class="change">
+                  <div class="input-group">
+                    <span class="input-group-addon" ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <label for="Destinstion" class="sr-only">Destinstion</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Destinstion ">
+                  </div>
+                </li>
+                <li class="flight-per">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <label for="Depart Date" class="sr-only">Depart Date</label>
+                    <input  class="check" type="text" onfocus="(this.type='date')" id="date" placeholder="Depart Date" />
+                  </div>
+                </li>
+                <li class="flight-person">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-address-card-o" aria-hidden="true"></i> 1 Traveller(s),Ecomomy
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu trav">
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Adults</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Child</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Infants</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Premium Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Bussines</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >First Class</label>
+                        </div>
+                      </li>
+                      <li class="flight-done">
+                        <button type="button" class="button">Done</button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="flight-searchbt">
+                  <a  class="search-packs"><button type="button" class="button" >Search</button></a>
+                </li>   
+              </ul>
+            </div>
+            <ul class="list-inline flight-checkbox-oneway">
+              <li>
+                  <label class="flight-check-box">Refundable Flights
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="flight-check-box">Non Stop Flight
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="flight-check-box">GDS Special Return
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+              </li>
+            </ul>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <div class="flight-orgin-bgcolour">
+              <ul class="list-inline exchanges">
+                <li class="flight-exchangesymb"><span><i class="fa fa-exchange" aria-hidden="true"></i></span></li>
+                <li class="change">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                    <label for="Origin" class="sr-only">Origin</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Origin ">
+                  </div>
+                </li>
+                <li class="change">
+                  <div class="input-group">
+                    <span class="input-group-addon" ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <label for="Destinstion" class="sr-only">Destinstion</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Destinstion ">
+                  </div>
+                </li>
+                <li class="flight-per date-set">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <label for="Depart Date" class="sr-only">Depart Date</label>
+                    <input  class="check" type="text" onfocus="(this.type='date')" id="date" placeholder="Depart" />
+                    <input  class="check" type="text" onfocus="(this.type='date')" id="date" placeholder="Return" />
+                  </div>
+                </li>
+                <li class="flight-person">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-address-card-o" aria-hidden="true"></i> 1 Traveller(s),Ecomomy
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu trav">
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Adults</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Child</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Infants</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Premium Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Bussines</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >First Class</label>
+                        </div>
+                      </li>
+                      <li class="flight-done">
+                        <button type="button" class="button">Done</button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="flight-searchbt">
+                  <a href="index-list-page.html"><button type="button" class="button" >Search</button></a>
+                </li>   
+              </ul>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade flight-multiway-choose">
+            <div class="flight-orgin-bgcolour">
+              <ul class="list-inline flight-multiway">
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                    <label for="Origin" class="sr-only">Origin</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Origin ">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-addon" ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <label for="Destinstion" class="sr-only">Destinstion</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Destinstion ">
+                  </div>
+                </li>
+                <li class="flight-multi-cal flight-per">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <label for="Depart Date" class="sr-only">Depart Date</label>
+                    <input  class="check" type="text" onfocus="(this.type='date')" id="date" placeholder="Depart Date" />
+                  </div>
+                </li>
+                <li class="flight-person">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-address-card-o" aria-hidden="true"></i> 1 Traveller(s),Ecomomy
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu trav">
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Adults</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Child</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li class="flight-total-person">
+                        <div class="flight-person-noms"><span>Select Infants</span>
+                          <button class="min">-</button>
+                          <input type="text" value="0" class="tick">
+                          <button class="max">+</button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Premium Economy</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >Bussines</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" >First Class</label>
+                        </div>
+                      </li>
+                      <li class="flight-done">
+                        <button type="button" class="button">Done</button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <div class="flight-addlast"> </div>
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                    <label for="Origin" class="sr-only">Origin</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Origin ">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-addon" ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <label for="Destinstion" class="sr-only">Destinstion</label>
+                    <input type="text " class="form-control "  name="Enter Your Name" placeholder="Destinstion ">
+                  </div>
+                </li>
+                <li>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="clad"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <label for="Depart Date" class="sr-only">Depart Date</label>
+                    <input type="date" class="form-control none" style="display: none;" name="Enter Your Name" placeholder="Depart Date ">
+                  </div>
+                </li>
+                <li class="flighyt-add-city">
+                  <div class="input-group ">
+                    <a href="javascript:;" onclick="myfunction()">+ Add City</a>
+                  </div>
+                </li>
+                <li class="flight-searchbt">
+                  <a href="index-list-page.html"><button type="button" class="button" >Search</button></a>
+                </li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flight-list-bgcolour">
+      <div class="Flight-Filter1 ">
+        <div class="container">
+          <ul>
+            <li><span><i class="fa fa-filter" aria-hidden="true"></i></span>Filters</li>
+            <li class="flight-World">Rest All <a href="javascript:;"><i class="fa fa-angle-up" aria-hidden="true"></i></a></li>
+          </ul> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <ul class="Flight-Filter1 colourbg">
+              <li>Berlin (BER) -> London (LHR) <span>Sun,Mar 30</span></li>
+              <li class="flight-World">Showing 118 of 118 flights</li>
+          </ul>
+          <ul class="Flight-Filter ">
+              <li>Airlines</li>
+              <li class="time-flight">Depart</li>
+              <li class="price-flight">Duration</li>
+              <li class="time-flight">Arrive</li>
+              <li class="price-flight">Price</li>
+          </ul>
+          <div class="flight-list">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flight-footer">
+      <div class="container">
+        <div class="flight-footer-up">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="flight-footer-left"> 
+                <a href="index.html">flight<span class="flight-img"><img src="images/Loginpage-.png" alt="" class="img" width="100%"></span><span>World</span></a>
+                <div class="flight-footer-mail">
+                  <p>Flight World Travel Agent dashboard is a specialized travel service for organizations from flightworld.com</p>
+                  <div class="form-group">
+                    <p>Get Latest Deals, Upcoming Flight Offers and Cheap Fare</p>
+                    <label class="sr-only" for="email">Email:</label>
+                    <button type="button"  class="button">Subscribe</button>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your email address"  name="email">
+                  </div>
+                </div>
+                <ul class="list-inline">
+                  <li><a href="javscript:;"><img src="images/Logo-footer-1.png" alt="" width="100%"></a></li>
+                  <li><a href="javscript:;"><img src="images/logo-footer-2.png" alt="" width="50%"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="flight-footer-right">
+                <a href="javscript:;"><span><img src="images/Loginpage-footer.png" alt=""></span>IATA</a>
+                <p>WE ARE AN IATA CERTIFIED TRAVEL AGENCY</p>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="flight-footer-right-us">
+                    <h3>About us</h3>
+                    <ul>
+                      <li><a href="javscript:;">About us</a></li>
+                      <li><a href="javscript:;">Contact us</a></li>
+                      <li><a href="javscript:;">Bank Details</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-footer-right-us">
+                    <h3>Legal</h3>
+                    <ul>
+                      <li><a href="javscript:;">Privacy</a></li>
+                      <li><a href="javscript:;">T&C</a></li>
+                      <li><a href="javscript:;">Disclaimer</a></li>
+                      <li><a href="javscript:;">Privacy and Cookies</a></li>
+                      <li><a href="javscript:;">Legal</a></li>
+                      <li><a href="javscript:;">Help</a></li>
+                      <li><a href="javscript:;">Feedback</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-footer-right-us">
+                    <h3>About us</h3>
+                    <ul>
+                      <li><a href="javscript:;">Partner With Us</a></li>
+                      <li><a href="javscript:;">Services</a></li>
+                      <li><a href="javscript:;">Careers</a></li>
+                      <li><a href="javscript:;">Products</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-footer-bottom">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="footer-bottom">
+                <h4 class="navbar-text">Follow us</h4>
+                <ul class="nav navbar-nav">
+                  <li><a href="javscript:;"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
+                  <li><a href="javscript:;"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+                  <li><a href="javscript:;"><span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a></li>
+                  <li><a href="javscript:;"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-bottom">
+                <ul class="nav navbar-nav footer-mail">
+                  <li><a href="tel:25698745">SUPPORT CENTER: (769) 25698745</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-bottom">
+                <ul class="nav navbar-nav footer-mail">
+                  <li><a href="mailto:Support@example.com" >Support@examble.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-footer-end">
+          <ul class="list-inline">
+            <li><a href="javscript:;">©2022 Flight World Pwt Lcd. All Rights Reserved.</a></li>
+            <li class="flight-return-top"><a href="#"><span><i class="fa fa-angle-double-up" aria-hidden="true"></i></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/javascript.js"></script>  
+</body>
+</html>

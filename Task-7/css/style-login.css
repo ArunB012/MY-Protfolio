@@ -1,0 +1,453 @@
+.flight-headbg {
+  margin-bottom: -14px;
+}
+
+.flight-login-bgcolor {
+  background: rgba(151, 167, 177, 0.4);
+  margin: 0px -15px;
+  padding: 45px 0px;
+  text-align: center;
+}
+.flight-login-bgcolor .flight-sign-in {
+  background-color: #ffffff;
+  width: 520px;
+  display: inline-block;
+  padding: 30px 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-login-bgcolor .flight-sign-in {
+    width: 100%;
+  }
+}
+.flight-login-bgcolor .flight-sign-in .flight-login-lock span {
+  border-radius: 50%;
+  background-color: #fabd06;
+  padding: 19px 20px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-login-lock span i {
+  font-size: 25px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-login-lock h5 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: -55px 0px 0px 80px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-login-lock p {
+  color: #122738;
+  font-size: 14px;
+  margin: 10px 0px 0px 80px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id {
+  margin-top: 20px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .form-group input {
+  padding: 25px 10px;
+  margin-top: 10px;
+  box-shadow: none;
+  font-size: 16px;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .form-group input:focus {
+  border: 1px solid rgba(173, 166, 162, 0.8509803922);
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .checkbox .lable {
+  font-size: 12px;
+  font-weight: bold;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .checkbox .lable a {
+  text-decoration: none;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .checkbox .lable a span {
+  color: #122738;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .flight-btn-login {
+  font-weight: bold;
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .flight-btn-login button {
+  width: 140px;
+  padding: 20px;
+  margin-right: 10px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-login-bgcolor .flight-sign-in .flight-id .flight-btn-login button {
+    width: 105px;
+    padding: 15px;
+  }
+}
+.flight-login-bgcolor .flight-sign-in .flight-id .flight-btn-login a {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.flight-carousel-middle {
+  background-color: #002d5b;
+  margin: 0px -15px;
+  padding: 45px 0px;
+}
+.flight-carousel-middle .nav-pills li a {
+  color: #ffffff;
+}
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  color: #ffffff;
+}
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box .checkmark {
+  border: 1px solid #fabd06;
+}
+
+.flight-list-bgcolour {
+  background-color: #efeeee;
+  margin: 0px -15px;
+  padding: 0px 0px 20px 0px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list-bgcolour {
+    padding: 0px 10px 20px 10px;
+  }
+}
+.flight-list-bgcolour .Flight-Filter1 ul {
+  padding: 0px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list-bgcolour .Flight-Filter1 ul li {
+    width: 50%;
+  }
+}
+.flight-list-bgcolour .Flight-Filter1 ul li i {
+  font-size: 18px;
+  margin-right: 8px;
+}
+.flight-list-bgcolour .Flight-Filter1 ul li a {
+  margin-left: 10px;
+}
+
+.Flight-Filter, .Flight-Filter1 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5faff;
+}
+.Flight-Filter li, .Flight-Filter1 li {
+  display: inline-block;
+  width: 223px;
+  color: #122738;
+  font-weight: bold;
+  font-size: 13px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Flight-Filter li, .Flight-Filter1 li {
+    width: 19%;
+  }
+}
+.Flight-Filter .time-flight, .Flight-Filter1 .time-flight {
+  padding: 0px 65px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Flight-Filter .time-flight, .Flight-Filter1 .time-flight {
+    padding: 0px;
+    text-align: center;
+  }
+}
+.Flight-Filter .price-flight, .Flight-Filter1 .price-flight {
+  text-align: center;
+}
+.Flight-Filter .flight-World, .Flight-Filter1 .flight-World {
+  float: right;
+  text-align: right;
+  font-weight: normal;
+  font-size: 13px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Flight-Filter .flight-World, .Flight-Filter1 .flight-World {
+    font-size: 11px;
+  }
+}
+
+.colourbg {
+  background: none;
+  margin-top: 15px;
+}
+.colourbg li {
+  font-size: 15px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .colourbg li {
+    width: 50%;
+    font-size: 13px;
+  }
+}
+.colourbg li span {
+  font-weight: normal;
+}
+
+.flight-list ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+}
+.flight-list ul li {
+  width: 220px;
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li {
+    width: 19%;
+  }
+}
+.flight-list ul li .flight-list-logo span {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0px 5px -3px 0px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .flight-list-logo span {
+    width: 46%;
+    font-size: 8px;
+    margin: 0px 0px -7px 0px;
+  }
+}
+.flight-list ul li .flight-list-logo span img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.flight-list ul li .flight-list-logo :last-child {
+  display: block;
+  color: #4a93df;
+  margin-top: 5px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .flight-list-logo :last-child {
+    width: 100%;
+  }
+}
+.flight-list ul li .flight-list-logo :first-child {
+  margin-top: 0px;
+}
+.flight-list ul li .time-flight {
+  padding: 0px 65px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .time-flight {
+    padding: 0px;
+    text-align: center;
+  }
+}
+.flight-list ul li .time-flight span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .time-flight span {
+    font-size: 13px;
+  }
+}
+.flight-list ul li .time-flight :last-child {
+  margin-top: 8px;
+  font-size: 12px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .time-flight :last-child {
+    margin-top: 0px;
+  }
+}
+.flight-list ul li .Duration-flight {
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .Duration-flight {
+    text-align: left;
+  }
+}
+.flight-list ul li .Duration-flight span {
+  display: block;
+  font-size: 13px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .Duration-flight span {
+    font-size: 11px;
+  }
+}
+.flight-list ul li .Duration-flight span span {
+  border-top: 1px solid #122738;
+  display: inline-block;
+  margin-top: 5px;
+}
+.flight-list ul li .price-flight {
+  text-align: center;
+}
+.flight-list ul li .price-flight span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .price-flight span {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+}
+.flight-list ul li .price-flight span span {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 3px;
+}
+.flight-list ul li .price-flight a button {
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #002d5b;
+  color: #4a93df;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .flight-list ul li .price-flight a button {
+    padding: 4px;
+  }
+}
+.flight-list ul:hover {
+  box-shadow: 2px 2px 15px #9f9f9f;
+  border: 1px solid #fabd06;
+}
+.flight-list ul:hover .price-flight a button {
+  background-color: #002d5b;
+  color: #fabd06;
+}
+
+.flight-book a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 25px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.flight-book a:hover {
+  text-decoration: none;
+  color: #255784;
+  background-color: #2196f3;
+  box-shadow: 0px 0px 10px #2196f3, 0px 0px 40px #2196f3, 0px 0px 80px #2196f3;
+  transition-delay: 1s;
+}
+.flight-book a span {
+  position: absolute;
+  display: block;
+}
+.flight-book a span:nth-child(1) {
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+.flight-book a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.flight-book a span:nth-child(3) {
+  bottom: 0px;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+.flight-book a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.flight-book a span:nth-child(2) {
+  top: -100px;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+.flight-book a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.flight-book a span:nth-child(4) {
+  bottom: -100px;
+  left: 0px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+.flight-book a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.owl-carousel .item {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+.owl-carousel .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 28px 25px;
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, #020024 0%, rgba(0, 0, 50, 0.631372549) 3%, rgba(23, 217, 255, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.owl-carousel .item .overlay span {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 60px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.owl-carousel .item .overlay > div h2 {
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+.owl-nav button {
+  background: #fff !important;
+  width: 45px;
+  height: 45px;
+  font-size: 25px !important;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.0196078431);
+  border-radius: 50%;
+}
+.owl-nav button:nth-of-type(1) {
+  margin-right: 13px;
+}/*# sourceMappingURL=style-login.css.map */
