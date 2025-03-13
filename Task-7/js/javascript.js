@@ -87,7 +87,7 @@
   
 //Unique
   let getUnique = "";
-  fetch('../json/flight-unique.json')
+  fetch('./json/flight-unique.json')
   .then(response => response.json())
   .then(json =>{
      json.forEach(function(only){
@@ -108,7 +108,7 @@
   
 //Flight List
   let getFlightList = "";
-  fetch('../json/flight-list.json')
+  fetch('./json/flight-list.json')
   .then(response => response.json())
   .then(json =>{
      json.forEach(function(list){
@@ -224,7 +224,7 @@ let getCon = [];
 let getSample = "berlin";
 let getSea = document.querySelector('.search-packs');
 let getAns1 = document.querySelectorAll('.form-control')[1].value;
-fetch('../json/flight.json')
+fetch('./json/flight.json')
 .then(response => response.json())
 .then(json =>{
    json.Amazing.forEach(function(item){
