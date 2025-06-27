@@ -453,3 +453,67 @@ h2, h3, h4, h5{
         }
     }
 }
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(25, end) forwards, blink 0.5s step-end infinite;
+  font-family: monospace;
+  font-size: 24px;
+    @media(min-width:320px) and (max-width:480px){
+        animation: none;
+        width: auto;
+        border-right: none;
+        white-space: normal;
+    }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.marquee-text {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: scroll 10s linear infinite;
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.flip-text span {
+  display: inline-block;
+  transform: rotateX(90deg);
+  opacity: 0;
+  animation: flipIn 0.5s forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes flipIn {
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
