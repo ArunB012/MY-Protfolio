@@ -1,30 +1,21 @@
-[
-    {
+[ {
         "id" : 1,
-        "Logo" : "icons8-html-5-100",
-        "Name" :"HTML-5",
+        "Logo" : "icons8-react-js-100",
+        "Name" :"React JS",
+        "Email" :"deenplydoors@gmail.com",
+        "Mobile"  : "90470 46655",
+        "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"
+    }, 
+    {
+        "id" : 2,
+        "Logo" : "icons8-react-native-100",
+        "Name" :"React Native",
         "Email" :"deenplydoors@gmail.com",
         "Mobile"  : "90470 46655",
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"
     },
     {
-        "id" : 2,
-        "Logo" : "icons8-css3-100",
-        "Name" :"CSS-3",
-        "Email" :"deenplydoors@gmail.com",
-        "Mobile"  : "90470 46655" ,
-        "Map"     : "https://maps.app.goo.gl/k87AQKNssWQtVFV99" 
-    },
-    {
         "id" : 3,
-        "Logo" : "icons8-bootstrap-100",
-        "Name" :"BOOSTRAP",
-        "Email" :"deenplydoors@gmail.com",
-        "Mobile"  : "90470 46655" ,
-        "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"
-    },
-    {
-        "id" : 4,
         "Logo" : "icons8-javascript-100",
         "Name" :"JAVASCRIPT",
         "Email" :"deenplydoors@gmail.com",
@@ -32,7 +23,32 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"  
     },
     {
+        "id" : 4,
+        "Logo" : "icons8-html-5-100",
+        "Name" :"HTML-5",
+        "Email" :"deenplydoors@gmail.com",
+        "Mobile"  : "90470 46655",
+        "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"
+    },
+    {
         "id" : 5,
+        "Logo" : "icons8-css3-100",
+        "Name" :"CSS-3",
+        "Email" :"deenplydoors@gmail.com",
+        "Mobile"  : "90470 46655" ,
+        "Map"     : "https://maps.app.goo.gl/k87AQKNssWQtVFV99" 
+    },
+    {
+        "id" : 6,
+        "Logo" : "icons8-bootstrap-100",
+        "Name" :"BOOSTRAP",
+        "Email" :"deenplydoors@gmail.com",
+        "Mobile"  : "90470 46655" ,
+        "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"
+    },
+    
+    {
+        "id" : 7,
         "Logo" : "icons8-jquery-100",
         "Name" :"JQUERY",
         "Email" :"deenplydoors@gmail.com",
@@ -40,7 +56,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67"  
     },
     {
-        "id" : 6,
+        "id" : 8,
         "Logo" : "icons8-responsive-design-100",
         "Name" :"RESPONSIVE-DESIGN",
         "Email" :"deenplydoors@gmail.com",
@@ -48,7 +64,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67" 
     },
     {
-        "id" : 7,
+        "id" : 9,
         "Logo" : "icons8-document-100",
         "Name" :"SCSS",
         "Email" :"deenplydoors@gmail.com",
@@ -56,7 +72,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67" 
     },
     {
-        "id" : 8,
+        "id" : 10,
         "Logo" : "icons8-photoshop-100",
         "Name" :"Photoshop",
         "Email" :"deenplydoors@gmail.com",
@@ -64,7 +80,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67" 
     },
     {
-        "id" : 9,
+        "id" : 11,
         "Logo" : "icons8-github-100",
         "Name" :"Github",
         "Email" :"deenplydoors@gmail.com",
@@ -72,7 +88,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67" 
     },
     {
-        "id" : 10,
+        "id" : 12,
         "Logo" : "icons8-adobe-100",
         "Name" :"AEM(Adobe Experience Manager)",
         "Email" :"deenplydoors@gmail.com",
@@ -80,7 +96,7 @@
         "Map"     : "https://maps.app.goo.gl/rPNoWde4HxNDhzM67" 
     },
     {
-        "id" : 11,
+        "id" : 13,
         "Logo" : "icons8-visual-studio-code-100",
         "Name" :"visual-studio-code",
         "Email" :"deenplydoors@gmail.com",
