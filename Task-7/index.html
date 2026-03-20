@@ -17,6 +17,8 @@
     <script src="js/bootstrap.min.js"></script>
     
   <!-- <script src="js/swiper-bundle.min.js"></script> -->
+   
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
@@ -30,15 +32,26 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <ul class="list-inline">
+            <ul class="list-inline" style="display: flex; align-items: center;">
               <li class="flight-left-slide">
                 <a class="navbar-brand" href="javascrirt:;"><span class="flight-img"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
               </li>
               <li>
                 <a class="navbar-brand" href="index.html">Flight<span class="flight-img"><img src="images/favicon.png" alt="" width="100%"></span><span>World</span></a>
               </li>
+              <div onclick="event.stopPropagation()" style="display: inline-block;">
+                <model-viewer
+                  src="images/Airplane.glb"
+                  auto-rotate
+                  camera-controls
+                  loading="eager"
+                  style="width: 60px; height: 60px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                  onload="this.style.visibility='visible'"
+                ></model-viewer>
+              </div>
             </ul>
           </div>
+          
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">

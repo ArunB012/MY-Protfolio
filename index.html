@@ -23,6 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" src="js/javascript.js"></script> -->
     <script src="https://fontawesome.com/v5/icons/html5?f=brands&s=solid"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <div class="container-fluide">
@@ -149,9 +150,29 @@
     </div>
     <div class="cv-bg_skill">
       <div class="container">
-        <div class="cv-commom-skill" data-aos="zoom-in" data-aos-delay="200">
+        <!-- <div class="cv-commom-skill" data-aos="zoom-in" data-aos-delay="200">
           <span class="cv-trapezoid"><h2>SKILLS</h2></span>
-        </div>
+         
+                <model-viewer
+                  src="images/red_emissive_minimal_computer.glb"
+                  auto-rotate
+                  camera-controls
+                  loading="eager"
+                  style="width: 60px; height: 60px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                  onload="this.style.visibility='visible'"
+                ></model-viewer>
+        </div> -->
+       <div class="cv-commom-skill" data-aos="zoom-in" data-aos-delay="200" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+  <span class="cv-trapezoid"><h2>SKILLS</h2></span>
+  <model-viewer
+  id="skills-model"
+  auto-rotate
+  camera-controls
+  loading="eager"
+  style="width: 100px; height: 100px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+  onload="this.style.visibility='visible'"
+></model-viewer>
+</div>
         <div class="row">
           <div class="cv-skill" data-aos="fade-up" data-aos-delay="400"></div>
         </div>

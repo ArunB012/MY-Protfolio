@@ -247,3 +247,14 @@ function getPath(update, smoothing) {
     '');
     return `<path d="${d}" /><path class="progress" d="${d}" />`;
 }
+
+const models = [
+    'images/red_emissive_minimal_computer.glb',
+    'images/sci_-_fi_computer_game_ready.glb'
+  ];
+
+  const last = localStorage.getItem('skillModel') || '0';
+  const next = last === '0' ? '1' : '0';
+
+  document.getElementById('skills-model').src = models[next];
+  localStorage.setItem('skillModel', next);

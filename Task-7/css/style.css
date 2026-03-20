@@ -514,12 +514,6 @@ p {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  /* Create a custom checkbox */
-  /* On mouse-over, add a grey background color */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-  /* Style the checkmark/indicator */
 }
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box input {
   position: absolute;
@@ -527,6 +521,9 @@ p {
   cursor: pointer;
   height: 0;
   width: 0;
+}
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* Create a custom checkbox */
 }
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box .checkmark {
   position: absolute;
@@ -538,19 +535,34 @@ p {
   border-radius: 5px;
   border: 1px solid #122738;
 }
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* On mouse-over, add a grey background color */
+}
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box :hover input ~ .checkmark {
   background-color: #ffffff;
 }
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* When the checkbox is checked, add a blue background */
+}
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box input:checked ~ .checkmark {
   background-color: #4a93df;
+}
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* Create the checkmark/indicator (hidden when not checked) */
 }
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* Show the checkmark when checked */
+}
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box input:checked ~ .checkmark:after {
   display: block;
+}
+.flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box {
+  /* Style the checkmark/indicator */
 }
 .flight-carousel-middle .flight-destinstion .flight-checkbox-oneway li .flight-check-box .checkmark:after {
   left: 4px;

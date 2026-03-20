@@ -25,6 +25,8 @@
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" src="js/javascript.js"></script> -->
+     
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
   <div class="container-fluide">
@@ -129,7 +131,7 @@
           <ul class="list-inline">
             <li>
               <!-- <a href="images/CV_Arun_Pandian.pdf" download="cv_Arun"><button class="btn"><i class="fa fa-download"></i> Download</button>MY CV</a> -->
-              <a href="images/CV_Arun_Pandian.pdf" download="cv_Arun"><span style=" margin-right: 10px;">Download</span><button class="dl-parachute"><span class="success">Complete</span>
+              <a href="images/ArunPandian.pdf" download="cv_Arun"><span style=" margin-right: 10px;">Download</span><button class="dl-parachute"><span class="success">Complete</span>
     <div class="arrow">
       <svg class="base" viewBox="0 0 48 48">
         <path
@@ -154,14 +156,72 @@
           <div class="row">
             <div class="col-sm-6">
               <ul class="list-inline">Project
-                <li>
-                  <a href="Task-7/index.html"> Designed website for flight ticket booking</a>
+                <li style="display: flex; align-items: center; gap: 10px;">
+                  <a href="https://blaackforestcakes.com/" target="_blank" rel="noopener noreferrer">
+                    Blaack Forest Website
+                  </a>
+                  <div onclick="event.stopPropagation()">
+                  <model-viewer
+                    src="images/croissant_1k.gltf"
+                    auto-rotate
+                    camera-controls
+                    loading="eager"
+                    style="width: 60px; height: 60px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                    onload="this.style.visibility='visible'"
+                  ></model-viewer>
+                  </div>
                 </li>
-                <li>
+               <li style="display: flex; align-items: center; gap: 10px;">
+                  <a href="Task-7/index.html" target="_blank" rel="noopener noreferrer">
+                    Designed website for flight ticket booking
+                  </a>
+                  <div onclick="event.stopPropagation()">
+                    <model-viewer
+                      src="images/Airplane.glb"
+                      auto-rotate
+                      camera-controls
+                      loading="eager"
+                      style="width: 70px; height: 70px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                      onload="this.style.visibility='visible'"
+                    ></model-viewer>
+                  </div>
+                </li>
+                <!-- <li>
                   <a href="javscript:;"> Vending Machine</a>
+                </li> -->
+                <li style="display: flex; align-items: center; gap: 10px;">
+                  <a href="javscript:;" target="_blank" rel="noopener noreferrer">
+                    Vending Machine
+                  </a>
+                  <div onclick="event.stopPropagation()">
+                    <model-viewer
+                      src="images/Vendingmachine.glb"
+                      auto-rotate
+                      camera-controls
+                      loading="eager"
+                      style="width: 60px; height: 60px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                      onload="this.style.visibility='visible'"
+                    ></model-viewer>
+                  </div>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="javscript:;">Boundary drawing robot full Automation</a>
+                </li> -->
+                
+               <li style="display: flex; align-items: center; gap: 10px;">
+                  <a href="javscript:;" target="_blank" rel="noopener noreferrer">
+                    Boundary drawing robot full Automation
+                  </a>
+                  <div onclick="event.stopPropagation()">
+                    <model-viewer
+                      src="images/Space rover.glb"
+                      auto-rotate
+                      camera-controls
+                      loading="eager"
+                      style="width: 60px; height: 60px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                      onload="this.style.visibility='visible'"
+                    ></model-viewer>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -176,6 +236,18 @@
                 <li>
                   <a href="javscript:;"> Strong Analytical and strategy thinking skills</a>
                 </li>
+                <li style="text-align: center;">
+                 <div onclick="event.stopPropagation()" style="display: inline-block;">
+                  <model-viewer
+                    src="images/dutch_ship_large_01_1k.gltf"
+                    auto-rotate
+                    camera-controls
+                    loading="eager"
+                    style="width: 200px; height: 200px; visibility: hidden; --poster-color: transparent; --progress-bar-color: transparent; --progress-mask: transparent; background-color: transparent;"
+                    onload="this.style.visibility='visible'"
+                  ></model-viewer>
+                  </div>
+                  </li>
               </ul>
             </div>
           </div>
